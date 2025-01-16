@@ -15,12 +15,20 @@ body {
     max-width: 1280px;
 }
 
+main section {
+    margin: 100px 0;
+}
+
 /* Common Style  */
 .section-title {
     color: rgb(18, 18, 18);
     font-family: Inter;
     font-size: 45px;
     font-weight: 700;
+}
+
+.section-title span {
+    color: rgb(255, 89, 89);
 }
 
 .section-caption {
@@ -90,10 +98,6 @@ body {
     text-align: center;
 }
 
-.donate h2 span {
-    color: rgb(255, 89, 89);
-}
-
 .donate-tk {
     display: flex;
     align-items: center;
@@ -132,6 +136,52 @@ body {
 .donate input:focus {
     border: 0px solid #ffffff;
 }
+hr{
+    margin: 0 auto;
+    width: 70%;
+    border: 1px solid rgb(218, 218, 218);
+}
+/* Our Donate Plan Section style */
+
+.plan-text {
+    text-align: center;
+
+}
+
+.plan-card-caption {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 0;
+}
+.plan-hole-card{
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.plan-card {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    padding: 30px;
+   
+}
+.plan-card img{
+    padding: 20px 0 25px 0;
+}
+.card1{
+    background: rgba(79, 157, 166, 0.1);
+}
+.card2{
+    background: rgba(255, 89, 89, 0.1);
+}
+.card3{
+    background: rgb(255, 244, 214);
+}
+
 /* Mobile Device  */
 @media screen and (max-width:576px) {
     .header-title {
@@ -141,23 +191,38 @@ body {
     .header-caption {
         padding: 30px 50px;
     }
-    .donate{
+
+    .donate, .plan {
         margin: 0 40px;
     }
+
     .donate-tk {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: auto auto;
         gap: 20px;
     }
+    
+    .plan-hole-card{
+        grid-template-columns: auto;
+
+    }
 }
+
 /* Medium Device  */
 @media screen and (min-width:577px) and (max-width:992px) {
-    .donate{
+    .donate {
         margin: 0 40px;
     }
+
     .donate-tk {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        grid-template-columns: auto auto;
+    }
+    .plan{
+        margin: 40px 40px;
+    }
+    .plan-hole-card{
+        grid-template-columns: auto auto;
+
     }
 }
