@@ -2,17 +2,76 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
 
-body{
+body {
     font-family: "Poppins", "Inter", serif;
     margin: 0 auto;
     max-width: 1280px;
 }
 
 /* Common Style  */
+.btn {
+    padding: 16px 12px 16px 12px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(255, 89, 89);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn:hover{
+    padding: 16px 14px 16px 14px;
+    box-shadow: 3px 3px 8px rgb(248, 223, 152);
+}
+/* Header Section Style  */
+
+.header {
+    background: linear-gradient(0.00deg, rgb(18, 18, 18), rgba(18, 18, 18, 0) 100%), url(../images/hero-bg.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 669px;
+    text-align: center;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 79px;
+}
+
+.header-caption {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 30px 0;
+}
+
+
+@media screen and (max-width:576px) {
+    .header-title{
+        font-size: 40px;
+    }
+    .header-caption{
+        padding: 30px 50px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    
+}
