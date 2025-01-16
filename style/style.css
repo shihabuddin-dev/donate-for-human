@@ -55,7 +55,9 @@ main section {
     padding: 16px 14px 16px 14px;
     box-shadow: 3px 3px 8px rgb(248, 223, 152);
 }
-
+input:focus {
+    outline: none;
+}
 /* Header Section Style  */
 
 .header {
@@ -134,9 +136,7 @@ main section {
     border: none;
 }
 
-.donate input:focus {
-    border: 0px solid #ffffff;
-}
+
 hr{
     margin: 0 auto;
     width: 70%;
