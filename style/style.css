@@ -7,8 +7,6 @@
     padding: 0;
 }
 
-
-
 body {
     font-family: "Poppins", "Inter", serif;
     margin: 0 auto;
@@ -55,9 +53,11 @@ main section {
     padding: 16px 14px 16px 14px;
     box-shadow: 3px 3px 8px rgb(248, 223, 152);
 }
+
 input:focus {
     outline: none;
 }
+
 /* Header Section Style  */
 
 .header {
@@ -137,11 +137,12 @@ input:focus {
 }
 
 
-hr{
+hr {
     margin: 0 auto;
     width: 70%;
     border: 1px solid rgb(218, 218, 218);
 }
+
 /* Our Donate Plan Section style */
 
 .plan-text {
@@ -157,52 +158,63 @@ hr{
     line-height: 24px;
     padding: 10px 0;
 }
-.plan-hole-card{
+
+.plan-hole-card {
     padding: 30px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
+
 .plan-card {
     width: 80%;
     height: auto;
     border-radius: 5px;
     padding: 30px;
-   
+
 }
-.plan-card img{
+
+.plan-card img {
     padding: 20px 0 25px 0;
 }
-.card1{
+
+.card1 {
     background: rgba(79, 157, 166, 0.1);
 }
-.card2{
+
+.card2 {
     background: rgba(255, 89, 89, 0.1);
 }
-.card3{
+
+.card3 {
     background: rgb(255, 244, 214);
 }
+
 /* News Of helpless people section Style  */
-.news h2{
+.news h2 {
     text-align: center;
 }
-.news1{
+
+.news1 {
     padding: 50px 0;
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
     align-items: center;
 }
-.news2{
+
+.news2 {
     display: flex;
-   flex-direction: row-reverse;
-   gap: 20px;
+    flex-direction: row-reverse;
+    gap: 20px;
 }
+
 /* Get Our Updates section style  */
-.update{
+.update {
     text-align: center;
 }
-.update-bg{
+
+.update-bg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,29 +226,32 @@ hr{
     border-radius: 8px;
     margin-top: 40px;
 }
-.update-bg input{
+
+.update-bg input {
     width: 275px;
-height: 48px;
+    height: 48px;
     border-radius: 5px 0px 0px 5px;
-background: rgb(217, 217, 217);
-border: none;
-padding-left: 20px;
-color: rgb(170, 159, 159);
-font-size: 16px;
-font-weight: 500;
+    background: rgb(217, 217, 217);
+    border: none;
+    padding-left: 20px;
+    color: rgb(170, 159, 159);
+    font-size: 16px;
+    font-weight: 500;
 }
-.update-bg button{
+
+.update-bg button {
     width: 157px;
-height: 48px;
+    height: 48px;
     border-radius: 0px 5px 5px 0px;
     background: rgb(255, 89, 89);
     border: none;
     color: rgb(255, 255, 255);
-font-size: 16px;
-font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
 }
+
 /* Footer Style  */
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,13 +261,15 @@ footer{
     background-color: black;
     border-radius: 8px;
 }
-.footer-caption{
+
+.footer-caption {
     color: rgb(217, 219, 225);
     font-family: Manrope;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
 }
+
 /* Mobile Device  */
 @media screen and (max-width:576px) {
     .header-title {
@@ -263,7 +280,8 @@ line-height: 24px;
         padding: 30px 50px;
     }
 
-    .donate, .plan {
+    .donate,
+    .plan {
         margin: 0 40px;
     }
 
@@ -272,17 +290,21 @@ line-height: 24px;
         grid-template-columns: auto auto;
         gap: 20px;
     }
-    
-    .plan-hole-card{
+
+    .plan-hole-card {
         grid-template-columns: auto;
 
     }
-    .news , .update , footer{
+
+    .news,
+    .update,
+    footer {
         padding: 40px 40px;
     }
-    .news1{
+
+    .news1 {
         display: flex;
-    flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 }
 
@@ -296,18 +318,22 @@ line-height: 24px;
         display: grid;
         grid-template-columns: auto auto;
     }
-    .plan{
+
+    .plan {
         margin: 40px 40px;
     }
-    .plan-hole-card{
+
+    .plan-hole-card {
         grid-template-columns: auto auto;
 
     }
-    .news{
+
+    .news {
         padding: 40px 40px;
     }
-    .news1{
+
+    .news1 {
         display: flex;
-    flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 }
